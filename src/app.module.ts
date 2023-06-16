@@ -54,7 +54,9 @@ const supergraphGatewayConfig = {
                 supergraphSdl: new IntrospectAndCompose({
                     subgraphs: [
                         // { name: 'Member', url: 'http://localhost:3030/graphql' },
-                        { name: 'astems', url: 'http://www.astems.co.kr:15000/graphql' },
+                        // { name: 'astems', url: 'http://www.astems.co.kr:15000/graphql' },
+                        { name: 'astems', url: 'http://localhost:3000/graphql' },
+                        { name: 'astems', url: 'http://172.28.0.2:3001/graphql' },
                     ],
                 }),
 
