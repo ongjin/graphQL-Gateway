@@ -49,6 +49,7 @@ const supergraphGatewayConfig = {
                 },
                 playground: true,
                 csrfPrevention: false,
+                introspection: true,
             },
             gateway: {
                 supergraphSdl: new IntrospectAndCompose({
