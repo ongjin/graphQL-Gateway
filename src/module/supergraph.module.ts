@@ -10,6 +10,7 @@ import {
 } from 'src/shared';
 import { GraphQLModule } from '@nestjs/graphql';
 
+
 @Module({
     imports: [
         GraphQLModule.forRoot<ApolloGatewayDriverConfig>({
@@ -25,6 +26,7 @@ import { GraphQLModule } from '@nestjs/graphql';
                 introspection: true,
                 // path: '/service1/graphql'
             },
+
             gateway: {
                 buildService: ({ name, url }) => {
                     // const { name, url } = serviceList

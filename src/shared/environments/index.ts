@@ -22,7 +22,6 @@ const GQLAPI_URL: string = process.env.GQLAPI_URL || 'http://www.astems.co.kr:15
 const NODE_PORT: number = Number(process.env.NODE_PORT) || 3001
 
 
-
 export {
     // node port
     NODE_PORT,

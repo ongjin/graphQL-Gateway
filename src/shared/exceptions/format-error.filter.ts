@@ -1,4 +1,5 @@
 import { ValidationError } from "apollo-server-express";
+import { GraphQLFormattedError } from "graphql";
 
 // custom formatError callback
 /**
@@ -6,8 +7,9 @@ import { ValidationError } from "apollo-server-express";
  * @param err 
  * @returns 
  */
-export const formatError = (err: any) => {
+export const formatError = (err: any): GraphQLFormattedError => {
     let { message, extensions } = err;
+    // (property) formatError?: (formattedError: GraphQLFormattedError, error: unknown) => GraphQLFormattedError
 
     console.log('message', message, extensions)
 
